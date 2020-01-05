@@ -46,7 +46,7 @@ class Learncss extends StatelessWidget {
                       child: new Text(
                         "Examples in Each Chapter",
                         style: new TextStyle(
-                            fontSize: 30.0,
+                            fontSize: 28.0,
                             color: Colors.black,
                             fontWeight: FontWeight.w700,
                             fontFamily: "Ewert"),
