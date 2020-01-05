@@ -1,4 +1,3 @@
-import 'package:wotproject/all_users.dart';
 import 'package:wotproject/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';

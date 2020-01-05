@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:wotproject/content/css/introcss.dart';
 
-class Learncssnav extends StatelessWidget {
+class Syntaxcssnav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "LEARN CSS",
+      title: "CSS Syntax",
       theme: new ThemeData(
         primarySwatch: Colors.black,
         primaryColor: Colors.black,
       ),
-      home: Learncss(),
+      home: Syntaxcss(),
     );
   }
 }
 
-class Learncss extends StatelessWidget {
+class Syntaxcss extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("LEARN CSS"),
+        title: new Text("CSS Syntax"),
       ),
       body: ListView(
         children: <Widget>[
@@ -39,7 +39,7 @@ class Learncss extends StatelessWidget {
                   children: <Widget>[
                     new Padding(
                       child: new Text(
-                        "Examples in Each Chapter",
+                        "CSS Syntax",
                         style: new TextStyle(
                             fontSize: 28.0,
                             color: Colors.black,
@@ -52,39 +52,64 @@ class Learncss extends StatelessWidget {
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(35.0, 0.0, 0.0, 10.0),
+                  padding: const EdgeInsets.fromLTRB(35.0, 0.0, 10.0, 35.0),
                   child: new Align(
-                    alignment: Alignment.centerLeft,
+                    alignment: Alignment.center,
                     child: new Text(
-                      "This CSS tutorial contains hundreds of CSS examples." +
-                          "\n" +
-                          "With our online editor, you can edit the CSS, and click on a button to view the result.",
+                      "A CSS rule-set consists of a selector and a declaration block:",
                       style: new TextStyle(
-                          fontSize: 13.0,
+                          fontSize: 18.0,
                           color: Colors.black,
-                          fontWeight: FontWeight.w400,
+                          fontWeight: FontWeight.w500,
                           fontFamily: "Ewert"),
                     ),
                   ),
                 ),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    new Padding(
-                      child: new Text(
-                        "CSS Example",
-                        style: new TextStyle(
-                            fontSize: 30.0,
-                            color: Colors.black,
-                            fontWeight: FontWeight.w700,
-                            fontFamily: "Ewert"),
-                      ),
-                      padding:
-                          const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
+                new Container(
+                  width: 280.0,
+                  height: 70.0,
+                  decoration: new BoxDecoration(
+                    shape: BoxShape.rectangle,
+                    image: new DecorationImage(
+                        fit: BoxFit.fill,
+                        image: new AssetImage("images/selector.gif")),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(35.0, 35.0, 10.0, 10.0),
+                  child: new Align(
+                    alignment: Alignment.center,
+                    child: new Text(
+                      "The selector points to the HTML element you want to style.\n\n" +
+                          "The declaration block contains one or more declarations separated by semicolons.\n\n" +
+                          "Each declaration includes a CSS property name and a value, separated by a colon.\n\n" +
+                          "A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.\n",
+                      style: new TextStyle(
+                          fontSize: 16.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "Ewert"),
                     ),
-                  ],
+                  ),
+                ),
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.blueGrey,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          "In this example all <p> elements will be center-aligned, with a red text color:",
+                          style: new TextStyle(
+                              fontSize: 15.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Ewert"),
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
@@ -96,16 +121,9 @@ class Learncss extends StatelessWidget {
                         padding:
                             const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                         child: new Text(
-                          "body {\n" +
-                              "   background-color:lightblue;\n" +
-                              "}\n" +
-                              "h1 {\n" +
-                              "   color: white;\n" +
-                              "   text-align:center;\n" +
-                              "}\n"
-                                  "p {\n" +
-                              "   font-family: verdana;\n" +
-                              "   font-size: 20px;\n" +
+                          "\np {\n" +
+                              "   color: red;\n" +
+                              "   text-align: center\n"+
                               "}\n",
                           style: new TextStyle(
                               fontSize: 18.0,
@@ -131,10 +149,10 @@ class Learncss extends StatelessWidget {
                             disabledTextColor: Colors.black,
                             splashColor: Colors.grey,
                             onPressed: () {
-                              home(context);
+                              back(context);
                             },
                             child: Text(
-                              " HOME ",
+                              " BACK ",
                               style: TextStyle(
                                   fontSize: 15.0, fontWeight: FontWeight.w600),
                             ),
@@ -157,7 +175,7 @@ class Learncss extends StatelessWidget {
                             ),
                           )),
                     ]),
-                    new Row(
+                new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -184,9 +202,11 @@ class Learncss extends StatelessWidget {
     );
   }
 }
-Future home(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => Learncss()));
-}
-Future next(context) async {
+
+Future back(context) async {
   Navigator.push(context, MaterialPageRoute(builder: (context) => Introcss()));
+}
+
+Future next(context) async {
+  Navigator.push(context, MaterialPageRoute(builder: (context) => null));
 }
