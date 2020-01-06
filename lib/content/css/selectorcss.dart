@@ -26,6 +26,7 @@ class Selectorcss extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           new Container(
+            color: Colors.white,
             alignment: Alignment.topRight,
             child: new Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -65,9 +66,9 @@ class Selectorcss extends StatelessWidget {
                           "- Attribute selectors (select elements based on an attribute or attribute value)\n\n"
                           "This page will explain the most basic CSS selectors.\n",
                       style: new TextStyle(
-                          fontSize: 13.0,
+                          fontSize: 16.0,
                           color: Colors.black,
-                          fontWeight: FontWeight.w400,
+                          fontWeight: FontWeight.w500,
                           fontFamily: "Ewert"),
                     ),
                   ),
@@ -98,9 +99,9 @@ class Selectorcss extends StatelessWidget {
                     child: new Text(
                       "The element selector selects HTML elements based on the element name.\n\n",
                       style: new TextStyle(
-                          fontSize: 13.0,
+                          fontSize: 16.0,
                           color: Colors.black,
-                          fontWeight: FontWeight.w400,
+                          fontWeight: FontWeight.w500,
                           fontFamily: "Ewert"),
                     ),
                   ),
@@ -127,7 +128,7 @@ class Selectorcss extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                   child: Container(
-                    color: Colors.black,
+                    color: Colors.black54,
                     child: new Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -205,7 +206,7 @@ class Selectorcss extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                   child: Container(
-                    color: Colors.black,
+                    color: Colors.black54,
                     child: new Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -282,7 +283,7 @@ class Selectorcss extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                   child: Container(
-                    color: Colors.black,
+                    color: Colors.black54,
                     child: new Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -339,7 +340,7 @@ class Selectorcss extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                   child: Container(
-                    color: Colors.black,
+                    color: Colors.black54,
                     child: new Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -396,7 +397,7 @@ class Selectorcss extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                   child: Container(
-                    color: Colors.black,
+                    color: Colors.black54,
                     child: new Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -469,7 +470,7 @@ class Selectorcss extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                   child: Container(
-                    color: Colors.black,
+                    color: Colors.black54,
                     child: new Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -501,7 +502,7 @@ class Selectorcss extends StatelessWidget {
                       Padding(
                           padding: const EdgeInsets.only(left: 0.0),
                           child: new FlatButton(
-                            color: Colors.lightBlue,
+                            color: Colors.redAccent,
                             textColor: Colors.white,
                             disabledColor: Colors.grey,
                             disabledTextColor: Colors.black,
@@ -518,7 +519,7 @@ class Selectorcss extends StatelessWidget {
                       Padding(
                           padding: const EdgeInsets.only(left: 130.0),
                           child: new FlatButton(
-                            color: Colors.lightBlue,
+                            color: Colors.redAccent,
                             textColor: Colors.white,
                             disabledColor: Colors.grey,
                             disabledTextColor: Colors.black,

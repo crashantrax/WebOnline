@@ -20,8 +20,8 @@ class SecondScreen extends StatelessWidget {
     return MaterialApp(
       title: "Second Page",
       theme: new ThemeData(
-        primarySwatch: Colors.black,
-        primaryColor: Colors.black,
+        primarySwatch: Colors.grey,
+        primaryColor: Colors.grey,
       ),
       home: SecondPage(),
     );
@@ -34,11 +34,7 @@ class SecondPage extends StatelessWidget {
 
   var idUser, username, firstname, lastname;
   SecondPage(
-      {Key key,
-      this.idUser,
-      this.firstname,
-      this.lastname,
-      this.username})
+      {Key key, this.idUser, this.firstname, this.lastname, this.username})
       : super(key: key);
 
   _launchURL() async {
@@ -71,7 +67,8 @@ class SecondPage extends StatelessWidget {
                         decoration: new BoxDecoration(
                           shape: BoxShape.circle,
                           image: new DecorationImage(
-                              fit: BoxFit.fill, image: new NetworkImage("https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png")),
+                              fit: BoxFit.fill,
+                              image: new AssetImage("images/profile.png")),
                         ),
                       ),
                       new Padding(
@@ -148,8 +145,7 @@ class SecondPage extends StatelessWidget {
             title: new Text('Logout'),
             onTap: () {
               var route = new MaterialPageRoute(
-                builder: (BuildContext context) =>
-                    new MyHomePage(),
+                builder: (BuildContext context) => new MyHomePage(),
               );
               Navigator.of(context).push(route);
             },
@@ -172,297 +168,335 @@ class SecondPage extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      new Padding(
-                        child: new Text(
-                          "HTML",
-                          style: new TextStyle(
-                              fontSize: 40.0,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Ewert"),
-                        ),
-                        padding:
-                            const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                      ),
-                      
-                    ]),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      new Padding(
-                        child: new Text(
-                          "The language for building web pages",
-                          maxLines: 2,
-                          style: new TextStyle(
-                              fontSize: 15.0,
-                              color: Colors.black,
-                              // fontWeight: FontWeight.w700,
-                              fontFamily: "Ewert"),
-                        ),
-                        padding:
-                            const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                      ),
-                    ]),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                          child: new FlatButton(
-                            color: Colors.lightBlue,
-                            textColor: Colors.white,
-                            disabledColor: Colors.grey,
-                            disabledTextColor: Colors.black,
-                            splashColor: Colors.grey,
-                            onPressed: () {
-                              navigateToLearnhtml(context);
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => LatestUpload()),
-                              // );
-                              /*...*/
-                            },
-                            child: Text(
-                              "LEARN HTML",
-                              style: TextStyle(
-                                  fontSize: 10.0, fontWeight: FontWeight.w600),
-                            ),
-                          )),
-                      Padding(
-                          padding: const EdgeInsets.only(left: 10.0),
-                          child: new FlatButton(
-                            color: Colors.lightBlue,
-                            textColor: Colors.white,
-                            disabledColor: Colors.grey,
-                            disabledTextColor: Colors.black,
-                            splashColor: Colors.grey,
-                            onPressed: () {
-                              navigateToHtmlreferences(context);
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => LatestUpload()),
-                              // );
-                              /*...*/
-                            },
-                            child: Padding(
-                              padding:
-                                  const EdgeInsets.fromLTRB(9.0, 0.0, 9.0, 0.0),
-                              child: Text(
-                                "HTML REFERENCES",
-                                style: TextStyle(
-                                    fontSize: 10.0,
-                                    fontWeight: FontWeight.w600),
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.black38,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "HTML",
+                                  style: new TextStyle(
+                                      fontSize: 40.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
                               ),
-                            ),
-                          )),
-                    ]),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      new Padding(
-                        child: new Text(
-                          "CSS",
-                          style: new TextStyle(
-                              fontSize: 40.0,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Ewert"),
-                        ),
-                        padding:
-                            const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                      ),
-                    ]),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      new Padding(
-                        child: new Text(
-                          "The language for styling web pages",
-                          maxLines: 2,
-                          style: new TextStyle(
-                              fontSize: 15.0,
-                              color: Colors.black,
-                              // fontWeight: FontWeight.w700,
-                              fontFamily: "Ewert"),
-                        ),
-                        padding:
-                            const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                      ),
-                    ]),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                          child: new FlatButton(
-                            color: Colors.lightBlue,
-                            textColor: Colors.white,
-                            disabledColor: Colors.grey,
-                            disabledTextColor: Colors.black,
-                            splashColor: Colors.grey,
-                            onPressed: () {
-                              navigateToLearncss(context);
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => LatestUpload()),
-                              // );
-                              /*...*/
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                  10.0, 0.0, 10.0, 0.0),
-                              child: Text(
-                                "LEARN CSS",
-                                style: TextStyle(
-                                    fontSize: 10.0,
-                                    fontWeight: FontWeight.w600),
+                            ]),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "The language for building web pages",
+                                  maxLines: 2,
+                                  style: new TextStyle(
+                                      fontSize: 15.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
                               ),
-                            ),
-                          )),
-                      Padding(
-                          padding: const EdgeInsets.only(left: 10.0),
-                          child: new FlatButton(
-                            color: Colors.lightBlue,
-                            textColor: Colors.white,
-                            disabledColor: Colors.grey,
-                            disabledTextColor: Colors.black,
-                            splashColor: Colors.grey,
-                            onPressed: () {
-                              navigateToCssreferences(context);
-                              // Navigator.push(
-                              //   context,
-                              //   MaterialPageRoute(
-                              //       builder: (context) => LatestUpload()),
-                              // );
-                              /*...*/
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(
-                                  10.0, 0.0, 10.0, 0.0),
-                              child: Text(
-                                "CSS REFERENCES",
-                                style: TextStyle(
-                                    fontSize: 10.0,
-                                    fontWeight: FontWeight.w600),
+                            ]),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 0.0),
+                                  child: new FlatButton(
+                                    color: Colors.redAccent,
+                                    textColor: Colors.white,
+                                    disabledColor: Colors.grey,
+                                    disabledTextColor: Colors.black,
+                                    splashColor: Colors.grey,
+                                    onPressed: () {
+                                      navigateToLearnhtml(context);
+                                      // Navigator.push(
+                                      //   context,
+                                      //   MaterialPageRoute(
+                                      //       builder: (context) => LatestUpload()),
+                                      // );
+                                      /*...*/
+                                    },
+                                    child: Text(
+                                      "LEARN HTML",
+                                      style: TextStyle(
+                                          fontSize: 10.0,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                  )),
+                              // Padding(
+                              //     padding: const EdgeInsets.only(left: 10.0),
+                              //     child: new FlatButton(
+                              //       color: Colors.redAccent,
+                              //       textColor: Colors.white,
+                              //       disabledColor: Colors.grey,
+                              //       disabledTextColor: Colors.black,
+                              //       splashColor: Colors.grey,
+                              //       onPressed: () {
+                              //         navigateToHtmlreferences(context);
+                              //         // Navigator.push(
+                              //         //   context,
+                              //         //   MaterialPageRoute(
+                              //         //       builder: (context) => LatestUpload()),
+                              //         // );
+                              //         /*...*/
+                              //       },
+                              //       child: Padding(
+                              //         padding: const EdgeInsets.fromLTRB(
+                              //             9.0, 0.0, 9.0, 0.0),
+                              //         child: Text(
+                              //           "HTML REFERENCES",
+                              //           style: TextStyle(
+                              //               fontSize: 10.0,
+                              //               fontWeight: FontWeight.w600),
+                              //         ),
+                              //       ),
+                              //     )),
+                            ]),
+                      ],
+                    ),
+                  ),
+                ),
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.black38,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "CSS",
+                                  style: new TextStyle(
+                                      fontSize: 40.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
                               ),
-                            ),
-                          )),
-                    ]),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      new Padding(
-                        child: new Text(
-                          "JavaScript",
-                          style: new TextStyle(
-                              fontSize: 40.0,
-                              color: Colors.black,
-                              fontWeight: FontWeight.w700,
-                              fontFamily: "Ewert"),
+                            ]),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "The language for styling web pages",
+                                  maxLines: 2,
+                                  style: new TextStyle(
+                                      fontSize: 15.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
+                              ),
+                            ]),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 0.0),
+                                  child: new FlatButton(
+                                    color: Colors.redAccent,
+                                    textColor: Colors.white,
+                                    disabledColor: Colors.grey,
+                                    disabledTextColor: Colors.black,
+                                    splashColor: Colors.grey,
+                                    onPressed: () {
+                                      navigateToLearncss(context);
+                                      // Navigator.push(
+                                      //   context,
+                                      //   MaterialPageRoute(
+                                      //       builder: (context) => LatestUpload()),
+                                      // );
+                                      /*...*/
+                                    },
+                                    child: Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                          10.0, 0.0, 10.0, 0.0),
+                                      child: Text(
+                                        "LEARN CSS",
+                                        style: TextStyle(
+                                            fontSize: 10.0,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                    ),
+                                  )),
+                              // Padding(
+                              //     padding: const EdgeInsets.only(left: 10.0),
+                              //     child: new FlatButton(
+                              //       color: Colors.redAccent,
+                              //       textColor: Colors.white,
+                              //       disabledColor: Colors.grey,
+                              //       disabledTextColor: Colors.black,
+                              //       splashColor: Colors.grey,
+                              //       onPressed: () {
+                              //         navigateToCssreferences(context);
+                              //         // Navigator.push(
+                              //         //   context,
+                              //         //   MaterialPageRoute(
+                              //         //       builder: (context) => LatestUpload()),
+                              //         // );
+                              //         /*...*/
+                              //       },
+                              //       child: Padding(
+                              //         padding: const EdgeInsets.fromLTRB(
+                              //             10.0, 0.0, 10.0, 0.0),
+                              //         child: Text(
+                              //           "CSS REFERENCES",
+                              //           style: TextStyle(
+                              //               fontSize: 10.0,
+                              //               fontWeight: FontWeight.w600),
+                              //         ),
+                              //       ),
+                              //     )),
+                            ]),
+                      ],
+                    ),
+                  ),
+                ),
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.black38,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "JavaScript",
+                                  style: new TextStyle(
+                                      fontSize: 40.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
+                              ),
+                            ]),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "The language for programming web pages",
+                                  maxLines: 2,
+                                  style: new TextStyle(
+                                      fontSize: 13.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
+                              ),
+                            ]),
+                        new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[
+                            Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 0.0),
+                                child: new FlatButton(
+                                  color: Colors.redAccent,
+                                  textColor: Colors.white,
+                                  disabledColor: Colors.grey,
+                                  disabledTextColor: Colors.black,
+                                  splashColor: Colors.grey,
+                                  onPressed: () {
+                                    navigateToLearnjavascript(context);
+                                    // Navigator.push(
+                                    //   context,
+                                    //   MaterialPageRoute(
+                                    //       builder: (context) => LatestUpload()),
+                                    // );
+                                    /*...*/
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        16.0, 0.0, 15.0, 0.0),
+                                    child: Text(
+                                      "LEARN JS",
+                                      style: TextStyle(
+                                          fontSize: 10.0,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                )),
+                            // Padding(
+                            //     padding: const EdgeInsets.only(left: 5.0),
+                            //     child: new FlatButton(
+                            //       color: Colors.redAccent,
+                            //       textColor: Colors.white,
+                            //       disabledColor: Colors.grey,
+                            //       disabledTextColor: Colors.black,
+                            //       splashColor: Colors.grey,
+                            //       onPressed: () {
+                            //         navigateToJavascriptreferences(context);
+                            //         // Navigator.push(
+                            //         //   context,
+                            //         //   MaterialPageRoute(
+                            //         //       builder: (context) => LatestUpload()),
+                            //         // );
+                            //         /*...*/
+                            //       },
+                            //       child: Padding(
+                            //         padding: const EdgeInsets.fromLTRB(
+                            //             14.0, 0.0, 14.0, 0.0),
+                            //         child: Text(
+                            //           "JS REFERENCES",
+                            //           style: TextStyle(
+                            //               fontSize: 10.0,
+                            //               fontWeight: FontWeight.w600),
+                            //         ),
+                            //       ),
+                            //     )),
+                          ],
                         ),
-                        padding:
-                            const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                      ),
-                    ]),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      new Padding(
-                        child: new Text(
-                          "The language for programming web pages",
-                          maxLines: 2,
-                          style: new TextStyle(
-                              fontSize: 13.0,
-                              color: Colors.black,
-                              // fontWeight: FontWeight.w700,
-                              fontFamily: "Ewert"),
-                        ),
-                        padding:
-                            const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
-                      ),
-                    ]),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                        child: new FlatButton(
-                          color: Colors.lightBlue,
-                          textColor: Colors.white,
-                          disabledColor: Colors.grey,
-                          disabledTextColor: Colors.black,
-                          splashColor: Colors.grey,
-                          onPressed: () {
-                            navigateToLearnjavascript(context);
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //       builder: (context) => LatestUpload()),
-                            // );
-                            /*...*/
-                          },
-                          child: Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(16.0, 0.0, 15.0, 0.0),
-                            child: Text(
-                              "LEARN JS",
-                              style: TextStyle(
-                                  fontSize: 10.0, fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(left: 5.0),
-                        child: new FlatButton(
-                          color: Colors.lightBlue,
-                          textColor: Colors.white,
-                          disabledColor: Colors.grey,
-                          disabledTextColor: Colors.black,
-                          splashColor: Colors.grey,
-                          onPressed: () {
-                            navigateToJavascriptreferences(context);
-                            // Navigator.push(
-                            //   context,
-                            //   MaterialPageRoute(
-                            //       builder: (context) => LatestUpload()),
-                            // );
-                            /*...*/
-                          },
-                          child: Padding(
-                            padding:
-                                const EdgeInsets.fromLTRB(14.0, 0.0, 14.0, 0.0),
-                            child: Text(
-                              "JS REFERENCES",
-                              style: TextStyle(
-                                  fontSize: 10.0, fontWeight: FontWeight.w600),
-                            ),
-                          ),
-                        )),
-                  ],
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),

@@ -89,7 +89,7 @@ class Learncss extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                   child: Container(
-                    color: Colors.black,
+                    color: Colors.black54,
                     child: new Align(
                       alignment: Alignment.centerLeft,
                       child: Padding(
@@ -125,7 +125,7 @@ class Learncss extends StatelessWidget {
                       Padding(
                           padding: const EdgeInsets.only(left: 0.0),
                           child: new FlatButton(
-                            color: Colors.lightBlue,
+                            color: Colors.redAccent,
                             textColor: Colors.white,
                             disabledColor: Colors.grey,
                             disabledTextColor: Colors.black,
@@ -142,7 +142,7 @@ class Learncss extends StatelessWidget {
                       Padding(
                           padding: const EdgeInsets.only(left: 130.0),
                           child: new FlatButton(
-                            color: Colors.lightBlue,
+                            color: Colors.redAccent,
                             textColor: Colors.white,
                             disabledColor: Colors.grey,
                             disabledTextColor: Colors.black,

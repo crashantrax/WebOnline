@@ -202,7 +202,7 @@ class Introcss extends StatelessWidget {
                     Padding(
                         padding: const EdgeInsets.only(left: 0.0),
                         child: new FlatButton(
-                          color: Colors.lightBlue,
+                          color: Colors.redAccent,
                           textColor: Colors.white,
                           disabledColor: Colors.grey,
                           disabledTextColor: Colors.black,
@@ -219,7 +219,7 @@ class Introcss extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 130.0),
                       child: new FlatButton(
-                        color: Colors.lightBlue,
+                        color: Colors.redAccent,
                         textColor: Colors.white,
                         disabledColor: Colors.grey,
                         disabledTextColor: Colors.black,
