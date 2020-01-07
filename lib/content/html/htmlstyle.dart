@@ -69,7 +69,7 @@ class Htmlstyle extends StatelessWidget {
                           Padding(
                               padding: const EdgeInsets.only(left: 20.0),
                               child: new FlatButton(
-                                color: Colors.lightBlue,
+                                color: Colors.redAccent,
                                 textColor: Colors.white,
                                 disabledColor: Colors.grey,
                                 disabledTextColor: Colors.black,
@@ -91,7 +91,7 @@ class Htmlstyle extends StatelessWidget {
                           Padding(
                               padding: const EdgeInsets.only(left: 130.0),
                               child: new FlatButton(
-                                color: Colors.lightBlue,
+                                color: Colors.redAccent,
                                 textColor: Colors.white,
                                 disabledColor: Colors.grey,
                                 disabledTextColor: Colors.black,
@@ -506,6 +506,26 @@ class Htmlstyle extends StatelessWidget {
                         ),
 
                       ),
+                    ),
+
+                    new Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        new Padding(
+                          child: new Text(
+                            "WebOnlineTutorial.ga",
+                            style: new TextStyle(
+                                fontSize: 13.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Ewert"),
+                          ),
+                          padding:
+                          const EdgeInsets.fromLTRB(30.0, 30.0, 10.0, 10.0),
+                        ),
+                      ],
                     ),
                   ],
 
