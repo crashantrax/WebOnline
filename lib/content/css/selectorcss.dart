@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wotproject/content/css/introcss.dart';
+import 'package:wotproject/content/css/addcss.dart';
 
 class Selectorcssnav extends StatelessWidget {
   @override
@@ -562,5 +562,5 @@ class Selectorcss extends StatelessWidget {
   }
 }
 Future next(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => null));
+  Navigator.push(context, MaterialPageRoute(builder: (context) => Addcss()));
 }
