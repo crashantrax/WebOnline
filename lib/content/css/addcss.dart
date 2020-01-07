@@ -503,5 +503,5 @@ class Addcss extends StatelessWidget {
 }
 
 Future next(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => Syntaxcss()));
+  Navigator.push(context, MaterialPageRoute(builder: (context) => null));
 }
