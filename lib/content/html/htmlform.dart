@@ -76,11 +76,7 @@ class Htmlform extends StatelessWidget {
                                 disabledTextColor: Colors.black,
                                 splashColor: Colors.grey,
                                 onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Htmltable()),
-                                  );
+                                  Navigator.of(context).pop();
                                   /*...*/
                                 },
                                 child: Text(

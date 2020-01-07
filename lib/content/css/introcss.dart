@@ -33,6 +33,69 @@ class Introcss extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
+
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    new Padding(
+                      child: new Text(
+                        "CSS Introduction",
+                        style: new TextStyle(
+                            fontSize: 30.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Ewert"),
+                      ),
+                      padding:
+                      const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 25.0),
+                    ),
+                  ],
+                ),
+
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                        padding: const EdgeInsets.only(left: 0.0),
+                        child: new FlatButton(
+                          color: Colors.redAccent,
+                          textColor: Colors.white,
+                          disabledColor: Colors.grey,
+                          disabledTextColor: Colors.black,
+                          splashColor: Colors.grey,
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: Text(
+                            "< BACK ",
+                            style: TextStyle(
+                                fontSize: 15.0, fontWeight: FontWeight.w600),
+                          ),
+                        )),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 130.0),
+                      child: new FlatButton(
+                        color: Colors.redAccent,
+                        textColor: Colors.white,
+                        disabledColor: Colors.grey,
+                        disabledTextColor: Colors.black,
+                        splashColor: Colors.grey,
+                        onPressed: () {
+                          next(context);
+                        },
+                        child: Text(
+                          " NEXT >",
+                          style: TextStyle(
+                              fontSize: 15.0, fontWeight: FontWeight.w600),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   mainAxisSize: MainAxisSize.max,
@@ -57,10 +120,10 @@ class Introcss extends StatelessWidget {
                   child: new Align(
                     alignment: Alignment.centerLeft,
                     child: new Text(
-                      "- CSS Stands for Cascading Style Sheets\n" +
-                          "- CSS describes how HTML elements are to be displayed on screen, paper, or in other media\n" +
-                          "- CSS saves a lot of work. It can control the layout of multiple web pages all at once\n" +
-                          "- External stylesheets are stored in CSS files",
+                      "➼ CSS Stands for Cascading Style Sheets\n" +
+                          "➼ CSS describes how HTML elements are to be displayed on screen, paper, or in other media\n" +
+                          "➼ CSS saves a lot of work. It can control the layout of multiple web pages all at once\n" +
+                          "➼ External stylesheets are stored in CSS files",
                       style: new TextStyle(
                           fontSize: 15.0,
                           color: Colors.black,
@@ -194,48 +257,7 @@ class Introcss extends StatelessWidget {
                     ),
                   ),
                 ),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Padding(
-                        padding: const EdgeInsets.only(left: 0.0),
-                        child: new FlatButton(
-                          color: Colors.redAccent,
-                          textColor: Colors.white,
-                          disabledColor: Colors.grey,
-                          disabledTextColor: Colors.black,
-                          splashColor: Colors.grey,
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                          },
-                          child: Text(
-                            "< BACK ",
-                            style: TextStyle(
-                                fontSize: 15.0, fontWeight: FontWeight.w600),
-                          ),
-                        )),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 130.0),
-                      child: new FlatButton(
-                        color: Colors.redAccent,
-                        textColor: Colors.white,
-                        disabledColor: Colors.grey,
-                        disabledTextColor: Colors.black,
-                        splashColor: Colors.grey,
-                        onPressed: () {
-                          next(context);
-                        },
-                        child: Text(
-                          " NEXT >",
-                          style: TextStyle(
-                              fontSize: 15.0, fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,

@@ -498,6 +498,232 @@ class SecondPage extends StatelessWidget {
                     ),
                   ),
                 ),
+
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.black38,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "SQL",
+                                  style: new TextStyle(
+                                      fontSize: 40.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
+                              ),
+                            ]),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "A language for accessing databases",
+                                  maxLines: 2,
+                                  style: new TextStyle(
+                                      fontSize: 13.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
+                              ),
+                            ]),
+                        new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[
+                            Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 0.0),
+                                child: new FlatButton(
+                                  color: Colors.redAccent,
+                                  textColor: Colors.white,
+                                  disabledColor: Colors.grey,
+                                  disabledTextColor: Colors.black,
+                                  splashColor: Colors.grey,
+                                  onPressed: () {
+                                    navigateToLearnjavascript(context);
+                                    // Navigator.push(
+                                    //   context,
+                                    //   MaterialPageRoute(
+                                    //       builder: (context) => LatestUpload()),
+                                    // );
+                                    /*...*/
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        16.0, 0.0, 15.0, 0.0),
+                                    child: Text(
+                                      "LEARN SQL",
+                                      style: TextStyle(
+                                          fontSize: 10.0,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                )),
+                            // Padding(
+                            //     padding: const EdgeInsets.only(left: 5.0),
+                            //     child: new FlatButton(
+                            //       color: Colors.redAccent,
+                            //       textColor: Colors.white,
+                            //       disabledColor: Colors.grey,
+                            //       disabledTextColor: Colors.black,
+                            //       splashColor: Colors.grey,
+                            //       onPressed: () {
+                            //         navigateToJavascriptreferences(context);
+                            //         // Navigator.push(
+                            //         //   context,
+                            //         //   MaterialPageRoute(
+                            //         //       builder: (context) => LatestUpload()),
+                            //         // );
+                            //         /*...*/
+                            //       },
+                            //       child: Padding(
+                            //         padding: const EdgeInsets.fromLTRB(
+                            //             14.0, 0.0, 14.0, 0.0),
+                            //         child: Text(
+                            //           "JS REFERENCES",
+                            //           style: TextStyle(
+                            //               fontSize: 10.0,
+                            //               fontWeight: FontWeight.w600),
+                            //         ),
+                            //       ),
+                            //     )),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.black38,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "PHP",
+                                  style: new TextStyle(
+                                      fontSize: 40.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w700,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
+                              ),
+                            ]),
+                        new Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              new Padding(
+                                child: new Text(
+                                  "A web server programming language",
+                                  maxLines: 2,
+                                  style: new TextStyle(
+                                      fontSize: 13.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                      fontFamily: "Ewert"),
+                                ),
+                                padding: const EdgeInsets.fromLTRB(
+                                    10.0, 10.0, 10.0, 10.0),
+                              ),
+                            ]),
+                        new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: <Widget>[
+                            Padding(
+                                padding: const EdgeInsets.symmetric(
+                                    horizontal: 0.0),
+                                child: new FlatButton(
+                                  color: Colors.redAccent,
+                                  textColor: Colors.white,
+                                  disabledColor: Colors.grey,
+                                  disabledTextColor: Colors.black,
+                                  splashColor: Colors.grey,
+                                  onPressed: () {
+                                    navigateToLearnjavascript(context);
+                                    // Navigator.push(
+                                    //   context,
+                                    //   MaterialPageRoute(
+                                    //       builder: (context) => LatestUpload()),
+                                    // );
+                                    /*...*/
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        16.0, 0.0, 15.0, 0.0),
+                                    child: Text(
+                                      "LEARN PHP",
+                                      style: TextStyle(
+                                          fontSize: 10.0,
+                                          fontWeight: FontWeight.w600),
+                                    ),
+                                  ),
+                                )),
+                            // Padding(
+                            //     padding: const EdgeInsets.only(left: 5.0),
+                            //     child: new FlatButton(
+                            //       color: Colors.redAccent,
+                            //       textColor: Colors.white,
+                            //       disabledColor: Colors.grey,
+                            //       disabledTextColor: Colors.black,
+                            //       splashColor: Colors.grey,
+                            //       onPressed: () {
+                            //         navigateToJavascriptreferences(context);
+                            //         // Navigator.push(
+                            //         //   context,
+                            //         //   MaterialPageRoute(
+                            //         //       builder: (context) => LatestUpload()),
+                            //         // );
+                            //         /*...*/
+                            //       },
+                            //       child: Padding(
+                            //         padding: const EdgeInsets.fromLTRB(
+                            //             14.0, 0.0, 14.0, 0.0),
+                            //         child: Text(
+                            //           "JS REFERENCES",
+                            //           style: TextStyle(
+                            //               fontSize: 10.0,
+                            //               fontWeight: FontWeight.w600),
+                            //         ),
+                            //       ),
+                            //     )),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ],
             ),
           ),

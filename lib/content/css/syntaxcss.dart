@@ -42,18 +42,58 @@ class Syntaxcss extends StatelessWidget {
                       child: new Text(
                         "CSS Syntax",
                         style: new TextStyle(
-                            fontSize: 28.0,
+                            fontSize: 30.0,
                             color: Colors.black,
                             fontWeight: FontWeight.w700,
                             fontFamily: "Ewert"),
                       ),
                       padding:
-                          const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                          const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 25.0),
                     ),
                   ],
                 ),
+                new Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                          padding: const EdgeInsets.only(left: 0.0),
+                          child: new FlatButton(
+                            color: Colors.redAccent,
+                            textColor: Colors.white,
+                            disabledColor: Colors.grey,
+                            disabledTextColor: Colors.black,
+                            splashColor: Colors.grey,
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text(
+                              "< BACK ",
+                              style: TextStyle(
+                                  fontSize: 15.0, fontWeight: FontWeight.w600),
+                            ),
+                          )),
+                      Padding(
+                          padding: const EdgeInsets.only(left: 130.0),
+                          child: new FlatButton(
+                            color: Colors.redAccent,
+                            textColor: Colors.white,
+                            disabledColor: Colors.grey,
+                            disabledTextColor: Colors.black,
+                            splashColor: Colors.grey,
+                            onPressed: () {
+                              next(context);
+                            },
+                            child: Text(
+                              " NEXT >",
+                              style: TextStyle(
+                                  fontSize: 15.0, fontWeight: FontWeight.w600),
+                            ),
+                          )),
+                    ]),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(35.0, 0.0, 10.0, 35.0),
+                  padding: const EdgeInsets.fromLTRB(35.0, 10.0, 10.0, 35.0),
                   child: new Align(
                     alignment: Alignment.center,
                     child: new Text(

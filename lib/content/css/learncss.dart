@@ -32,6 +32,67 @@ class Learncss extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
+
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    new Padding(
+                      child: new Text(
+                        "CSS Tutorial",
+                        style: new TextStyle(
+                            fontSize: 30.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Ewert"),
+                      ),
+                      padding:
+                      const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 25.0),
+                    ),
+                  ],
+                ),
+
+                new Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisSize: MainAxisSize.max,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                          padding: const EdgeInsets.only(left: 0.0),
+                          child: new FlatButton(
+                            color: Colors.redAccent,
+                            textColor: Colors.white,
+                            disabledColor: Colors.grey,
+                            disabledTextColor: Colors.black,
+                            splashColor: Colors.grey,
+                            onPressed: () {
+                              Navigator.of(context).pop();
+                            },
+                            child: Text(
+                              " < HOME ",
+                              style: TextStyle(
+                                  fontSize: 15.0, fontWeight: FontWeight.w600),
+                            ),
+                          )),
+                      Padding(
+                          padding: const EdgeInsets.only(left: 130.0),
+                          child: new FlatButton(
+                            color: Colors.redAccent,
+                            textColor: Colors.white,
+                            disabledColor: Colors.grey,
+                            disabledTextColor: Colors.black,
+                            splashColor: Colors.grey,
+                            onPressed: () {
+                              next(context);
+                            },
+                            child: Text(
+                              " NEXT >",
+                              style: TextStyle(
+                                  fontSize: 15.0, fontWeight: FontWeight.w600),
+                            ),
+                          )),
+                    ]),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
@@ -117,46 +178,46 @@ class Learncss extends StatelessWidget {
                     ),
                   ),
                 ),
-                new Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.max,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Padding(
-                          padding: const EdgeInsets.only(left: 0.0),
-                          child: new FlatButton(
-                            color: Colors.redAccent,
-                            textColor: Colors.white,
-                            disabledColor: Colors.grey,
-                            disabledTextColor: Colors.black,
-                            splashColor: Colors.grey,
-                            onPressed: () {
-                              Navigator.of(context).pop();
-                            },
-                            child: Text(
-                              " < HOME ",
-                              style: TextStyle(
-                                  fontSize: 15.0, fontWeight: FontWeight.w600),
-                            ),
-                          )),
-                      Padding(
-                          padding: const EdgeInsets.only(left: 130.0),
-                          child: new FlatButton(
-                            color: Colors.redAccent,
-                            textColor: Colors.white,
-                            disabledColor: Colors.grey,
-                            disabledTextColor: Colors.black,
-                            splashColor: Colors.grey,
-                            onPressed: () {
-                              next(context);
-                            },
-                            child: Text(
-                              " NEXT >",
-                              style: TextStyle(
-                                  fontSize: 15.0, fontWeight: FontWeight.w600),
-                            ),
-                          )),
-                    ]),
+//                new Row(
+//                    mainAxisAlignment: MainAxisAlignment.center,
+//                    mainAxisSize: MainAxisSize.max,
+//                    crossAxisAlignment: CrossAxisAlignment.center,
+//                    children: <Widget>[
+//                      Padding(
+//                          padding: const EdgeInsets.only(left: 0.0),
+//                          child: new FlatButton(
+//                            color: Colors.redAccent,
+//                            textColor: Colors.white,
+//                            disabledColor: Colors.grey,
+//                            disabledTextColor: Colors.black,
+//                            splashColor: Colors.grey,
+//                            onPressed: () {
+//                              Navigator.of(context).pop();
+//                            },
+//                            child: Text(
+//                              " < HOME ",
+//                              style: TextStyle(
+//                                  fontSize: 15.0, fontWeight: FontWeight.w600),
+//                            ),
+//                          )),
+//                      Padding(
+//                          padding: const EdgeInsets.only(left: 130.0),
+//                          child: new FlatButton(
+//                            color: Colors.redAccent,
+//                            textColor: Colors.white,
+//                            disabledColor: Colors.grey,
+//                            disabledTextColor: Colors.black,
+//                            splashColor: Colors.grey,
+//                            onPressed: () {
+//                              next(context);
+//                            },
+//                            child: Text(
+//                              " NEXT >",
+//                              style: TextStyle(
+//                                  fontSize: 15.0, fontWeight: FontWeight.w600),
+//                            ),
+//                          )),
+//                    ]),
                     new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
