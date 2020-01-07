@@ -153,7 +153,7 @@ class Syntaxcss extends StatelessWidget {
                               Navigator.of(context).pop();
                             },
                             child: Text(
-                              " BACK ",
+                              "< BACK ",
                               style: TextStyle(
                                   fontSize: 15.0, fontWeight: FontWeight.w600),
                             ),
@@ -170,7 +170,7 @@ class Syntaxcss extends StatelessWidget {
                               next(context);
                             },
                             child: Text(
-                              " NEXT ",
+                              " NEXT >",
                               style: TextStyle(
                                   fontSize: 15.0, fontWeight: FontWeight.w600),
                             ),

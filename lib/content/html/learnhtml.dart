@@ -76,12 +76,7 @@ class Learnhtml extends StatelessWidget {
                                   disabledTextColor: Colors.black,
                                   splashColor: Colors.grey,
                                   onPressed: () {
-                                    navigateToHomepage(context);
-                                    Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                    builder: (context) => SecondScreen()),
-                                     );
+                                    Navigator.of(context).pop();
                                     /*...*/
                                   },
                                   child: Text(

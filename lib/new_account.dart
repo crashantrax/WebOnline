@@ -19,9 +19,6 @@ class _RegisterState extends State<Register> {
       cardColor: CeBackgroundBlack,
       textSelectionColor: CeBlack1,
       errorColor: CeErrorRed,
-      //TODO: Add the text themes (103)
-      //TODO: Add the icon themes (103)
-      //TODO: Decorate the inputs (103)
     );
   }
 

@@ -102,11 +102,7 @@ class Jsdatatype extends StatelessWidget {
                                 disabledTextColor: Colors.black,
                                 splashColor: Colors.grey,
                                 onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Jssyntax()),
-                                  );
+                                  Navigator.of(context).pop();
                                   /*...*/
                                 },
                                 child: Text(

@@ -67,17 +67,17 @@ class _ProfileState extends State<Profile> {
         appBar: AppBar(
           title: Text(" Menu"),
           actions: <Widget>[
-            new IconButton(
-                icon: new Icon(Icons.call),
-                onPressed: () {
-                  _launchURL();
-                }),
+            // new IconButton(
+            //     icon: new Icon(Icons.call),
+            //     onPressed: () {
+            //       _launchURL();
+            //     }),
 
             // action button
-            new IconButton(
-              icon: new Icon(Icons.map),
-              onPressed: () {},
-            ),
+            // new IconButton(
+            //   icon: new Icon(Icons.map),
+            //   onPressed: () {},
+            // ),
           ],
         ),
         body: !_isLoading

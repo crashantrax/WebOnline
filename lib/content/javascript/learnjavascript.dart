@@ -100,11 +100,7 @@ class Learnjavascript extends StatelessWidget {
                                 disabledTextColor: Colors.black,
                                 splashColor: Colors.grey,
                                 onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Homepage()),
-                                  );
+                                  Navigator.of(context).pop();
                                   /*...*/
                                 },
                                 child: Text(
