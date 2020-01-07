@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wotproject/content/homepage.dart';
 import 'package:wotproject/content/javascript/jsintro.dart';
+import 'package:wotproject/second_screen.dart';
 
 
 class Learnjavascriptnav extends StatelessWidget {
@@ -29,35 +30,10 @@ class Learnjavascript extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('LEARN JAVASCRIPT'),
-          ),
-          drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  DrawerHeader(
-                    child: Text("Drawer Header"),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  new ListTile(
-                    // leading: CircleAvatar(
-                    //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                    // ),
-                    title: Text('Drawer Example'),
-                    onTap: (){
-
-                    },
-                  )
-
-                ],
-              )
-          ),
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("LEARN JAVASCRIPT"),
+      ),
           body: ListView(
             children: <Widget>[
               new Container(
@@ -94,7 +70,7 @@ class Learnjavascript extends StatelessWidget {
                           Padding(
                               padding: const EdgeInsets.only(left: 20.0),
                               child: new FlatButton(
-                                color: Colors.lightBlue,
+                                color: Colors.redAccent,
                                 textColor: Colors.white,
                                 disabledColor: Colors.grey,
                                 disabledTextColor: Colors.black,
@@ -103,12 +79,12 @@ class Learnjavascript extends StatelessWidget {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => Homepage()),
+                                        builder: (context) => SecondScreen()),
                                   );
                                   /*...*/
                                 },
                                 child: Text(
-                                  "< Previous",
+                                  "< Home",
                                   style: TextStyle(
                                       fontSize: 15.0, fontWeight: FontWeight.w600),
                                 ),
@@ -116,7 +92,7 @@ class Learnjavascript extends StatelessWidget {
                           Padding(
                               padding: const EdgeInsets.only(left: 130.0),
                               child: new FlatButton(
-                                color: Colors.lightBlue,
+                                color: Colors.redAccent,
                                 textColor: Colors.white,
                                 disabledColor: Colors.grey,
                                 disabledTextColor: Colors.black,
@@ -236,12 +212,33 @@ class Learnjavascript extends StatelessWidget {
                       ),
                     ),
 
+                    new Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        new Padding(
+                          child: new Text(
+                            "WebOnlineTutorial.ga",
+                            style: new TextStyle(
+                                fontSize: 13.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Ewert"),
+                          ),
+                          padding:
+                          const EdgeInsets.fromLTRB(30.0, 30.0, 10.0, 10.0),
+                        ),
+                      ],
+                    ),
 
-                ]),
+
+                  ],
+                ),
               ),
             ],
           ),
-        ));
+    );
   }
 }
 

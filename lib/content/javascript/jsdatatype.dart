@@ -5,6 +5,7 @@ import 'package:wotproject/content/homepage.dart';
 import 'package:wotproject/content/javascript/learnjavascript.dart';
 import 'package:wotproject/content/javascript/jsintro.dart';
 import 'package:wotproject/content/javascript/jssyntax.dart';
+import 'package:wotproject/second_screen.dart';
 
 
 class Jsdatatypenav extends StatelessWidget {
@@ -31,35 +32,10 @@ class Jsdatatype extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('LEARN JAVASCRIPT'),
-          ),
-          drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  DrawerHeader(
-                    child: Text("Drawer Header"),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  new ListTile(
-                    // leading: CircleAvatar(
-                    //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                    // ),
-                    title: Text('Drawer Example'),
-                    onTap: (){
-
-                    },
-                  )
-
-                ],
-              )
-          ),
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("LEARN JAVASCRIPT"),
+      ),
           body: ListView(
             children: <Widget>[
               new Container(
@@ -96,7 +72,7 @@ class Jsdatatype extends StatelessWidget {
                           Padding(
                               padding: const EdgeInsets.only(left: 20.0),
                               child: new FlatButton(
-                                color: Colors.lightBlue,
+                                color: Colors.redAccent,
                                 textColor: Colors.white,
                                 disabledColor: Colors.grey,
                                 disabledTextColor: Colors.black,
@@ -115,29 +91,29 @@ class Jsdatatype extends StatelessWidget {
                                       fontSize: 15.0, fontWeight: FontWeight.w600),
                                 ),
                               )),
-                          Padding(
-                              padding: const EdgeInsets.only(left: 130.0),
-                              child: new FlatButton(
-                                color: Colors.lightBlue,
-                                textColor: Colors.white,
-                                disabledColor: Colors.grey,
-                                disabledTextColor: Colors.black,
-                                splashColor: Colors.grey,
-                                onPressed: () {
-
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Learnjavascript()),
-                                  );
-                                  /*...*/
-                                },
-                                child: Text(
-                                  "Next >",
-                                  style: TextStyle(
-                                      fontSize: 15.0, fontWeight: FontWeight.w600),
-                                ),
-                              )),
+//                          Padding(
+//                              padding: const EdgeInsets.only(left: 130.0),
+//                              child: new FlatButton(
+//                                color: Colors.redAccent,
+//                                textColor: Colors.white,
+//                                disabledColor: Colors.grey,
+//                                disabledTextColor: Colors.black,
+//                                splashColor: Colors.grey,
+//                                onPressed: () {
+//
+//                                  Navigator.push(
+//                                    context,
+//                                    MaterialPageRoute(
+//                                        builder: (context) => Learnjavascript()),
+//                                  );
+//                                  /*...*/
+//                                },
+//                                child: Text(
+//                                  "Next >",
+//                                  style: TextStyle(
+//                                      fontSize: 15.0, fontWeight: FontWeight.w600),
+//                                ),
+//                              )),
                         ]),
 
                     new Row(
@@ -176,19 +152,20 @@ class Jsdatatype extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "var length = 16;                                                     // Number \n \n "
-                                  "var lastName = 'Johnson';                                // String \n \n"
+                              "var length = 16;                 // Number \n \n "
+                                  "var lastName = 'Johnson';    // String \n \n"
                                   "var x = {firstName:'John', lastName:'Doe'};    // Object ",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -238,17 +215,18 @@ class Jsdatatype extends StatelessWidget {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                                   "var x = 16 + 'Volvo';",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -293,19 +271,20 @@ class Jsdatatype extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "var x;           // Now x is undefined  \n"
                               "x = 5;           // Now x is a Number \n"
                               "x = 'John';      // Now x is a String",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -353,18 +332,19 @@ class Jsdatatype extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "var carName1 = ''Volvo XC60'';   // Using double quotes  \n "
+                              "var carName1 = ''Volvo XC60'';   // Using double quotes  \n \n "
                                   "var carName2 = 'Volvo XC60';   // Using single quotes",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -391,19 +371,20 @@ class Jsdatatype extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "var answer1 = 'It's alright';               // Single quote inside double quotes \n "
-                              "var answer2 = ''He is called 'Johnny''';    // Single quotes inside double quotes \n"
+                              "var answer1 = 'It's alright';               // Single quote inside double quotes \n \n"
+                              "var answer2 = ''He is called 'Johnny''';    // Single quotes inside double quotes \n \n"
                               "var answer3 = 'He is called ''Johnny''';    // Double quotes inside single quotes",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -450,18 +431,19 @@ class Jsdatatype extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "var x1 = 34.00;     // Written with decimals \n"
+                              "var x1 = 34.00;     // Written with decimals \n \n"
                               "var x2 = 34;        // Written without decimals",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -508,13 +490,14 @@ class Jsdatatype extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "var x = 5; \n"
                               "var y = 5; \n"
@@ -522,7 +505,7 @@ class Jsdatatype extends StatelessWidget {
                               "(x == y)       // Returns true \n"
                               "(x == z)       // Returns false",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -626,17 +609,18 @@ class Jsdatatype extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                                   "var cars = [''Saab'', ''Volvo'', ''BMW''];",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -663,13 +647,32 @@ class Jsdatatype extends StatelessWidget {
                         ),
                       ),
                     ),
-                  ],
 
+                    new Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        new Padding(
+                          child: new Text(
+                            "WebOnlineTutorial.ga",
+                            style: new TextStyle(
+                                fontSize: 13.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: "Ewert"),
+                          ),
+                          padding:
+                          const EdgeInsets.fromLTRB(30.0, 30.0, 10.0, 10.0),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
             ],
           ),
-        ));
+    );
   }
 }
 
