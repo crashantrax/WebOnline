@@ -21,7 +21,7 @@ class Selectorcss extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("CSS SELECTOR"),
+        title: new Text("LEARN CSS"),
       ),
       body: ListView(
         children: <Widget>[

@@ -614,6 +614,8 @@ class SecondPage extends StatelessWidget {
                   ),
                 ),
 
+
+
                 new Card(
                   elevation: 8.0,
                   color: Colors.black38,
@@ -691,41 +693,17 @@ class SecondPage extends StatelessWidget {
                                           fontWeight: FontWeight.w600),
                                     ),
                                   ),
-                                )),
-                            // Padding(
-                            //     padding: const EdgeInsets.only(left: 5.0),
-                            //     child: new FlatButton(
-                            //       color: Colors.redAccent,
-                            //       textColor: Colors.white,
-                            //       disabledColor: Colors.grey,
-                            //       disabledTextColor: Colors.black,
-                            //       splashColor: Colors.grey,
-                            //       onPressed: () {
-                            //         navigateToJavascriptreferences(context);
-                            //         // Navigator.push(
-                            //         //   context,
-                            //         //   MaterialPageRoute(
-                            //         //       builder: (context) => LatestUpload()),
-                            //         // );
-                            //         /*...*/
-                            //       },
-                            //       child: Padding(
-                            //         padding: const EdgeInsets.fromLTRB(
-                            //             14.0, 0.0, 14.0, 0.0),
-                            //         child: Text(
-                            //           "JS REFERENCES",
-                            //           style: TextStyle(
-                            //               fontSize: 10.0,
-                            //               fontWeight: FontWeight.w600),
-                            //         ),
-                            //       ),
-                            //     )),
+                                )
+                            ),
                           ],
                         ),
+
                       ],
                     ),
                   ),
                 ),
+
+
               ],
             ),
           ),
