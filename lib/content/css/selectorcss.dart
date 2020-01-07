@@ -516,6 +516,23 @@ class Selectorcss extends StatelessWidget {
                                   fontSize: 15.0, fontWeight: FontWeight.w600),
                             ),
                           )),
+                      Padding(
+                          padding: const EdgeInsets.only(left: 130.0),
+                          child: new FlatButton(
+                            color: Colors.redAccent,
+                            textColor: Colors.white,
+                            disabledColor: Colors.grey,
+                            disabledTextColor: Colors.black,
+                            splashColor: Colors.grey,
+                            onPressed: () {
+                              next(context);
+                            },
+                            child: Text(
+                              " NEXT >",
+                              style: TextStyle(
+                                  fontSize: 15.0, fontWeight: FontWeight.w600),
+                            ),
+                          )),
                     ]),
                     new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
