@@ -22,7 +22,7 @@ class Syntaxcss extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("CSS Syntax"),
+        title: new Text("LEARN CSS"),
       ),
       body: ListView(
         children: <Widget>[

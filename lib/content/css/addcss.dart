@@ -22,7 +22,7 @@ class Addcss extends StatelessWidget {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("How To Add CSS"),
+        title: new Text("LEARN CSS"),
       ),
       body: ListView(
         children: <Widget>[
@@ -34,7 +34,7 @@ class Addcss extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 new Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
@@ -42,18 +42,61 @@ class Addcss extends StatelessWidget {
                       child: new Text(
                         "How To Add CSS",
                         style: new TextStyle(
-                            fontSize: 28.0,
+                            fontSize: 30.0,
                             color: Colors.black,
                             fontWeight: FontWeight.w700,
                             fontFamily: "Ewert"),
                       ),
                       padding:
-                          const EdgeInsets.fromLTRB(30.0, 10.0, 10.0, 10.0),
+                          const EdgeInsets.fromLTRB(30.0, 10.0, 10.0, 20.0),
                     ),
                   ],
                 ),
+
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    Padding(
+                        padding: const EdgeInsets.only(left: 30.0),
+                        child: new FlatButton(
+                          color: Colors.redAccent,
+                          textColor: Colors.white,
+                          disabledColor: Colors.grey,
+                          disabledTextColor: Colors.black,
+                          splashColor: Colors.grey,
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: Text(
+                            "< BACK ",
+                            style: TextStyle(
+                                fontSize: 15.0, fontWeight: FontWeight.w600),
+                          ),
+                        )),
+//                    Padding(
+//                      padding: const EdgeInsets.only(left: 130.0),
+//                      child: new FlatButton(
+//                        color: Colors.redAccent,
+//                        textColor: Colors.white,
+//                        disabledColor: Colors.grey,
+//                        disabledTextColor: Colors.black,
+//                        splashColor: Colors.grey,
+//                        onPressed: () {
+//                          next(context);
+//                        },
+//                        child: Text(
+//                          " NEXT >",
+//                          style: TextStyle(
+//                              fontSize: 15.0, fontWeight: FontWeight.w600),
+//                        ),
+//                      ),
+//                    ),
+                  ],
+                ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(35.0, 0.0, 10.0, 10.0),
+                  padding: const EdgeInsets.fromLTRB(35.0, 10.0, 10.0, 10.0),
                   child: new Align(
                     alignment: Alignment.centerLeft,
                     child: new Text(
@@ -432,48 +475,7 @@ class Addcss extends StatelessWidget {
                     ),
                   ),
                 ),
-                new Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  mainAxisSize: MainAxisSize.max,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    Padding(
-                        padding: const EdgeInsets.only(left: 0.0),
-                        child: new FlatButton(
-                          color: Colors.redAccent,
-                          textColor: Colors.white,
-                          disabledColor: Colors.grey,
-                          disabledTextColor: Colors.black,
-                          splashColor: Colors.grey,
-                          onPressed: () {
-                            Navigator.of(context).pop();
-                          },
-                          child: Text(
-                            "< BACK ",
-                            style: TextStyle(
-                                fontSize: 15.0, fontWeight: FontWeight.w600),
-                          ),
-                        )),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 130.0),
-                      child: new FlatButton(
-                        color: Colors.redAccent,
-                        textColor: Colors.white,
-                        disabledColor: Colors.grey,
-                        disabledTextColor: Colors.black,
-                        splashColor: Colors.grey,
-                        onPressed: () {
-                          next(context);
-                        },
-                        child: Text(
-                          " NEXT >",
-                          style: TextStyle(
-                              fontSize: 15.0, fontWeight: FontWeight.w600),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
