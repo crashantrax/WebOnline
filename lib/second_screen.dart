@@ -12,6 +12,7 @@ import 'package:wotproject/content/css/cssreferences.dart';
 import 'package:wotproject/content/javascript/learnjavascript.dart';
 import 'package:wotproject/content/javascript/javascriptreferences.dart';
 import 'package:wotproject/content/sql/learnsql.dart';
+import 'package:wotproject/content/php/learnphp.dart';
 
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -63,8 +64,8 @@ class SecondPage extends StatelessWidget {
                   child: Row(
                     children: <Widget>[
                       new Container(
-                        width: 70.0,
-                        height: 70.0,
+                        width: 100.0,
+                        height: 100.0,
                         decoration: new BoxDecoration(
                           shape: BoxShape.circle,
                           image: new DecorationImage(
@@ -672,7 +673,7 @@ class SecondPage extends StatelessWidget {
                                   disabledTextColor: Colors.black,
                                   splashColor: Colors.grey,
                                   onPressed: () {
-                                    navigateToLearnjavascript(context);
+                                    navigateToLearnPhp(context);
                                     // Navigator.push(
                                     //   context,
                                     //   MaterialPageRoute(
@@ -765,4 +766,8 @@ Future navigateToJavascriptreferences(context) async {
 Future navigateToLearnsql(context) async {
   Navigator.push(
       context, MaterialPageRoute(builder: (context) => Learnsql()));
+}
+Future navigateToLearnPhp(context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => Learnphp()));
 }

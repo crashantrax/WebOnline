@@ -463,7 +463,7 @@ class Addcss extends StatelessWidget {
                         disabledTextColor: Colors.black,
                         splashColor: Colors.grey,
                         onPressed: () {
-                          next(context);
+                          
                         },
                         child: Text(
                           " NEXT >",

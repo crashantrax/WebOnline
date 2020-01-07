@@ -86,27 +86,30 @@ class _ProfileState extends State<Profile> {
                 child: new Center(
                   child: Card(
                     child: Column(
-                      mainAxisSize: MainAxisSize.min,
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.max,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                        Row(
-                          children: <Widget>[
-                            new Container(
-                              width: 60.0,
-                              height: 60.0,
-                              child: new CircleAvatar(
-                                minRadius: 50.0,
-                                backgroundColor: Colors.blue.shade50,
-                                child: new Text(gender),
+                        Container(
+                          color: Colors.black38,
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                  top: 20.0, bottom: 20.0),
+                              child: new Container(
+                                width: 120.0,
+                                height: 120.0,
+                                decoration: new BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  image: new DecorationImage(
+                                      fit: BoxFit.fill,
+                                      image:
+                                          new AssetImage("images/profile.png")),
+                                ),
                               ),
                             ),
-                            SizedBox(
-                              width: 5.0,
-                            ),
-                            Text(
-                              user_name,
-                              style: TextStyle(fontSize: 20.0),
-                            )
-                          ],
+                          ),
                         ),
                         SizedBox(
                           height: 20.0,
@@ -115,60 +118,69 @@ class _ProfileState extends State<Profile> {
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
                             children: <Widget>[
-                              Row(
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
+                                  // Text(
+                                  //   "User Name : ",
+                                  //   style: TextStyle(fontSize: 20.0),
+                                  // ),
+                                  // SizedBox(
+                                  //   width: 5.0,
+                                  // ),
                                   Text(
-                                    "User Name : ",
-                                    style: TextStyle(fontSize: 20.0),
-                                  ),
-                                  SizedBox(
-                                    width: 5.0,
-                                  ),
-                                  Text(
-                                    user_name,
+                                    user_name+"\n",
                                     style: TextStyle(fontSize: 20.0),
                                   )
                                 ],
                               ),
-                              Row(
+                              // Row(
+                              //   children: <Widget>[
+                              //     Text(
+                              //       "Last Name : ",
+                              //       style: TextStyle(fontSize: 20.0),
+                              //     ),
+                              //     SizedBox(
+                              //       width: 5.0,
+                              //     ),
+                              //     Text(
+                              //       last_name,
+                              //       style: TextStyle(fontSize: 20.0),
+                              //     )
+                              //   ],
+                              // ),
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
+                                  // Text(
+                                  //   "Name : ",
+                                  //   style: TextStyle(fontSize: 20.0),
+                                  // ),
+                                  // SizedBox(
+                                  //   width: 5.0,
+                                  // ),
                                   Text(
-                                    "Last Name : ",
-                                    style: TextStyle(fontSize: 20.0),
-                                  ),
-                                  SizedBox(
-                                    width: 5.0,
-                                  ),
-                                  Text(
-                                    last_name,
+                                    first_name+"\n",
                                     style: TextStyle(fontSize: 20.0),
                                   )
                                 ],
                               ),
-                              Row(
+                              Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                mainAxisSize: MainAxisSize.max,
+                                crossAxisAlignment: CrossAxisAlignment.center,
                                 children: <Widget>[
-                                  Text(
-                                    "First Name : ",
-                                    style: TextStyle(fontSize: 20.0),
-                                  ),
-                                  SizedBox(
-                                    width: 5.0,
-                                  ),
-                                  Text(
-                                    first_name,
-                                    style: TextStyle(fontSize: 20.0),
-                                  )
-                                ],
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Text(
-                                    "Gender        : ",
-                                    style: TextStyle(fontSize: 20.0),
-                                  ),
-                                  SizedBox(
-                                    width: 5.0,
-                                  ),
+                                  // Text(
+                                  //   "Gender        : ",
+                                  //   style: TextStyle(fontSize: 20.0),
+                                  // ),
+                                  // SizedBox(
+                                  //   width: 5.0,
+                                  // ),
                                   Text(
                                     gender,
                                     style: TextStyle(fontSize: 20.0),
@@ -188,8 +200,8 @@ class _ProfileState extends State<Profile> {
                                   var route = new MaterialPageRoute(
                                     builder: (BuildContext context) =>
                                         new Update(
-                                          idUser: widget.idUser,
-                                        ),
+                                      idUser: widget.idUser,
+                                    ),
                                   );
                                   Navigator.of(context).push(route);
                                 },
