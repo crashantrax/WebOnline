@@ -201,7 +201,237 @@ class Addcss extends StatelessWidget {
                     ),
                   ),
                 ),
-                
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(35.0, 0.0, 10.0, 10.0),
+                  child: new Align(
+                    alignment: Alignment.centerLeft,
+                    child: new Text(
+                      "'mystyle.css'",
+                      style: new TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "Ewert"),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
+                  child: Container(
+                    color: Colors.black54,
+                    child: new Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                        child: new Text(
+                          "\nbody {\n" +
+                              "   background-color: lightblue;\n" +
+                              "}\n"+
+                              "h1 {\n"+
+                              "   color: navy;\n"+
+                              "   margin-left: 20px;\n"+
+                              "}",
+                          style: new TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Ewert"),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.yellow,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          "Note: Do not add a space between the property value and the unit (such as margin-left: 20 px;). The correct way is: margin-left: 20px;",
+                          style: new TextStyle(
+                              fontSize: 15.0,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Ewert"),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    new Padding(
+                      child: new Text(
+                        "Internal CSS",
+                        style: new TextStyle(
+                            fontSize: 28.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Ewert"),
+                      ),
+                      padding:
+                          const EdgeInsets.fromLTRB(30.0, 10.0, 10.0, 10.0),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(35.0, 0.0, 10.0, 10.0),
+                  child: new Align(
+                    alignment: Alignment.centerLeft,
+                    child: new Text(
+                      "An internal style sheet may be used if one single HTML page has a unique style.\n\n" +
+                          "The internal style is defined inside the <style> element, inside the head section.\n\n",
+                      style: new TextStyle(
+                          fontSize: 15.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "Ewert"),
+                    ),
+                  ),
+                ),
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.yellow,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          "Example Internal styles are defined within the <style> element, inside the <head> section of an HTML page:\n\n",
+                          style: new TextStyle(
+                              fontSize: 15.0,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Ewert"),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
+                  child: Container(
+                    color: Colors.black54,
+                    child: new Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                        child: new Text(
+                          "\n<!DOCTYPE html>\n" +
+                              "<html>\n" +
+                              "<head>\n"+
+                              "<style>\n"+
+                              "body {"+
+                              "   background-color: linen;"+
+                              "}"+
+                              "h1 {"+
+                              "   color: maroon;"+
+                              "   margin-left: 40px;"+
+                              "}"+
+                              "</style>"+
+                              "</head>\n"+
+                              "<body>\n\n"+
+                              "<h1>This is a heading</h1>"+
+                              "<p>This is a paragraph.</p>\n\n"+
+                              "</body>\n"+
+                              "</html>\n",
+                          style: new TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Ewert"),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                new Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    new Padding(
+                      child: new Text(
+                        "Inline CSS",
+                        style: new TextStyle(
+                            fontSize: 28.0,
+                            color: Colors.black,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: "Ewert"),
+                      ),
+                      padding:
+                          const EdgeInsets.fromLTRB(30.0, 10.0, 10.0, 10.0),
+                    ),
+                  ],
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(35.0, 0.0, 10.0, 10.0),
+                  child: new Align(
+                    alignment: Alignment.centerLeft,
+                    child: new Text(
+                      "An inline style may be used to apply a unique style for a single element.\n\n" +
+                          "To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.\n\n",
+                      style: new TextStyle(
+                          fontSize: 15.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.w500,
+                          fontFamily: "Ewert"),
+                    ),
+                  ),
+                ),
+                new Card(
+                  elevation: 8.0,
+                  color: Colors.yellow,
+                  child: new Padding(
+                    padding: const EdgeInsets.all(18.0),
+                    child: Column(
+                      children: <Widget>[
+                        Text(
+                          "Example Inline styles are defined within the 'style' attribute of the relevant element:\n\n",
+                          style: new TextStyle(
+                              fontSize: 15.0,
+                              color: Colors.black,
+                              fontWeight: FontWeight.w500,
+                              fontFamily: "Ewert"),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
+                  child: Container(
+                    color: Colors.black54,
+                    child: new Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                        child: new Text(
+                          "\n<!DOCTYPE html>\n" +
+                              "<html>\n" +
+                              "<body>\n\n"+
+                              "<h1 style='color:blue;text-align:center;'>This is a heading</h1>"+
+                              "<p style='color:red;'>This is a paragraph.</p>\n\n"+
+                              "</body>\n"+
+                              "</html>\n",
+                          style: new TextStyle(
+                              fontSize: 18.0,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w400,
+                              fontFamily: "Ewert"),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
