@@ -111,7 +111,7 @@ class Learnjavascript extends StatelessWidget {
                         ]),
 
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(0.0, 15.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(5.0, 15.0, 5.0, 10.0),
                       child: Container(
                         color: Colors.lightBlueAccent,
                         child: new Align(

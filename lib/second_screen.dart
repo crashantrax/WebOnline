@@ -11,6 +11,7 @@ import 'package:wotproject/content/css/learncss.dart';
 import 'package:wotproject/content/css/cssreferences.dart';
 import 'package:wotproject/content/javascript/learnjavascript.dart';
 import 'package:wotproject/content/javascript/javascriptreferences.dart';
+import 'package:wotproject/content/sql/learnsql.dart';
 
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -558,7 +559,7 @@ class SecondPage extends StatelessWidget {
                                   disabledTextColor: Colors.black,
                                   splashColor: Colors.grey,
                                   onPressed: () {
-                                    navigateToLearnjavascript(context);
+                                    navigateToLearnsql(context);
                                     // Navigator.push(
                                     //   context,
                                     //   MaterialPageRoute(
@@ -759,4 +760,9 @@ Future navigateToLearnjavascript(context) async {
 Future navigateToJavascriptreferences(context) async {
   Navigator.push(
       context, MaterialPageRoute(builder: (context) => Javascriptreferences()));
+}
+
+Future navigateToLearnsql(context) async {
+  Navigator.push(
+      context, MaterialPageRoute(builder: (context) => Learnsql()));
 }
