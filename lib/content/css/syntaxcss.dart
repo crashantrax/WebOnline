@@ -150,7 +150,7 @@ class Syntaxcss extends StatelessWidget {
                             disabledTextColor: Colors.black,
                             splashColor: Colors.grey,
                             onPressed: () {
-                              back(context);
+                              Navigator.of(context).pop();
                             },
                             child: Text(
                               " BACK ",
@@ -204,9 +204,6 @@ class Syntaxcss extends StatelessWidget {
   }
 }
 
-Future back(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => Introcss()));
-}
 
 Future next(context) async {
   Navigator.push(context, MaterialPageRoute(builder: (context) => Selectorcss()));

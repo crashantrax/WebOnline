@@ -131,7 +131,7 @@ class Learncss extends StatelessWidget {
                             disabledTextColor: Colors.black,
                             splashColor: Colors.grey,
                             onPressed: () {
-                              home(context);
+                              Navigator.of(context).pop();
                             },
                             child: Text(
                               " HOME ",
@@ -183,9 +183,6 @@ class Learncss extends StatelessWidget {
       ),
     );
   }
-}
-Future home(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => Learncss()));
 }
 Future next(context) async {
   Navigator.push(context, MaterialPageRoute(builder: (context) => Introcss()));

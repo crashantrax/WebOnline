@@ -208,7 +208,7 @@ class Introcss extends StatelessWidget {
                           disabledTextColor: Colors.black,
                           splashColor: Colors.grey,
                           onPressed: () {
-                            back(context);
+                            Navigator.of(context).pop();
                           },
                           child: Text(
                             " BACK ",
@@ -262,10 +262,6 @@ class Introcss extends StatelessWidget {
       ),
     );
   }
-}
-
-Future back(context) async {
-  Navigator.push(context, MaterialPageRoute(builder: (context) => Learncss()));
 }
 
 Future next(context) async {
