@@ -29,35 +29,11 @@ class Htmlform extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('LEARN HTML'),
-          ),
-          drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  DrawerHeader(
-                    child: Text("Drawer Header"),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  new ListTile(
-                    // leading: CircleAvatar(
-                    //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                    // ),
-                    title: Text('Drawer Example'),
-                    onTap: (){
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("LEARN HTML"),
+      ),
 
-                    },
-                  )
-
-                ],
-              )
-          ),
           body: ListView(
             children: <Widget>[
               new Container(
@@ -243,13 +219,14 @@ class Htmlform extends StatelessWidget {
 //                      ),
 //                    ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
 //                              "<table style='width:100%'>"
 //                                  "\n"+
@@ -283,7 +260,7 @@ class Htmlform extends StatelessWidget {
                                   "</form>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -330,11 +307,12 @@ class Htmlform extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "<form>"
                                   "  First name:<br> \n"
@@ -344,7 +322,7 @@ class Htmlform extends StatelessWidget {
                                   "</form>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -394,21 +372,22 @@ class Htmlform extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "<form>"
-                                  "  First name:<br> \n"
-                                  "  <input type='radio' name='gender' value='male' checked> Male<br> \n"
-                                  "  <input type='radio' name='gender' value='female' checked> Female<br> \n"
-                                  "  <input type='radio' name='gender' value='other' checked> Other<br> \n"
+                                  "  First name:<br> \n \n"
+                                  "  <input type='radio' name='gender' value='male' checked> Male<br> \n \n"
+                                  "  <input type='radio' name='gender' value='female' checked> Female<br> \n \n"
+                                  "  <input type='radio' name='gender' value='other' checked> Other<br> \n \n"
                                   "</form>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -459,22 +438,23 @@ class Htmlform extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<form action='/action_page.php'>"
+                              "<form action='/action_page.php'> \n \n"
                                   "  First name:<br> \n"
                                   "  <input type='text' name='firstname' value='Mickey'><br> \n"
                                   "  Last name:<br> \n"
                                   "  <input type='text' name='lastname' value='Mouse'><br> \n"
-                                  "  <input type='submit' value='Submit'> \n"
+                                  "  <input type='submit' value='Submit'> \n \n"
                                   "</form>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -494,6 +474,6 @@ class Htmlform extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        );
   }
 }

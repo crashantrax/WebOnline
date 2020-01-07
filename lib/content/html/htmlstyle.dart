@@ -28,35 +28,11 @@ class Htmlstyle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('LEARN HTML'),
-          ),
-          drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  DrawerHeader(
-                    child: Text("Drawer Header"),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  new ListTile(
-                    // leading: CircleAvatar(
-                    //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                    // ),
-                    title: Text('Drawer Example'),
-                    onTap: (){
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("LEARN HTML"),
+      ),
 
-                    },
-                  )
-
-                ],
-              )
-          ),
           body: ListView(
             children: <Widget>[
               new Container(
@@ -189,17 +165,18 @@ class Htmlstyle extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "<tagname style='property:value;'>",
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -247,13 +224,14 @@ class Htmlstyle extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "<body style='background-color:powderblue;'>"
                               "\n"+
@@ -266,7 +244,7 @@ class Htmlstyle extends StatelessWidget {
                               "</body>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -313,17 +291,22 @@ class Htmlstyle extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<h1 style='color:blue;'>This is a heading</h1> \n"
-                              "<p style='color:red;'>This is a paragraph.</p>"
+                              "<h1 style='color:blue;'> \n "
+                              "This is a heading \n"
+                              "</h1> \n"
+                              "<p style='color:red;'> \n "
+                              "This is a paragraph. \n"
+                              "</p>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -371,17 +354,22 @@ class Htmlstyle extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<h1 style='font-family:verdana;'>This is a heading</h1> \n"
-                                  "<p style='font-family:courier;'>This is a paragraph.</p>"
+                              "<h1 style='font-family:verdana;'> \n"
+                              "This is a heading \n"
+                              "</h1> \n"
+                                  "<p style='font-family:courier;'> \n"
+                              "This is a paragraph. \n"
+                              "</p>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -429,17 +417,22 @@ class Htmlstyle extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<h1 style='font-size:300%;'>This is a heading</h1> \n"
-                                  "<p style='font-size:160%;'>This is a paragraph.</p>"
+                              "<h1 style='font-size:300%;'> \n"
+                              "This is a heading \n"
+                              "</h1> \n"
+                                  "<p style='font-size:160%;'> \n"
+                              "This is a paragraph. \n"
+                              "</p>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -487,17 +480,22 @@ class Htmlstyle extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<h1 style='text-align:center;'>Centered Heading</h1> \n"
-                                  "<p style='text-align:center;'>Centered paragraph.</p>"
+                              "<h1 style='text-align:center;'> \n"
+                              "Centered Heading \n"
+                              "</h1> \n"
+                                  "<p style='text-align:center;'> \n"
+                              "Centered paragraph. \n"
+                              "</p>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -515,6 +513,6 @@ class Htmlstyle extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        );
   }
 }

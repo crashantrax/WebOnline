@@ -27,35 +27,11 @@ class Htmlattrib extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('LEARN HTML'),
-          ),
-          drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  DrawerHeader(
-                    child: Text("Drawer Header"),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  new ListTile(
-                    // leading: CircleAvatar(
-                    //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                    // ),
-                    title: Text('Drawer Example'),
-                    onTap: (){
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("LEARN HTML"),
+      ),
 
-                    },
-                  )
-
-                ],
-              )
-          ),
           body: ListView(
             children: <Widget>[
               new Container(
@@ -142,7 +118,7 @@ class Htmlattrib extends StatelessWidget {
                         child: new Text(
                           "Attributes provide additional information about HTML elements.",
                           style: new TextStyle(
-                              fontSize: 13.0,
+                              fontSize: 15.0,
                               color: Colors.black,
                               fontWeight: FontWeight.w400,
                               fontFamily: "Ewert"),
@@ -226,17 +202,18 @@ class Htmlattrib extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
-                                child: new Text(
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            child: new Text(
                               "<img src='img_girl.jpg'>",
                             style: new TextStyle(
-                              fontSize: 13.0,
+                              fontSize: 18.0,
                               color: Colors.white,
                               fontWeight: FontWeight.w400,
                               fontFamily: "Ewert"
@@ -283,16 +260,19 @@ class Htmlattrib extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<a href='https://www.w3schools.com'>This is a link</a> \n"
+                              "<a> \n"
+                              "href='https://www.w3schools.com'>This is a link \n"
+                              "</a>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -310,6 +290,6 @@ class Htmlattrib extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        );
   }
 }

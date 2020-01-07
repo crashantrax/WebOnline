@@ -29,35 +29,11 @@ class Htmltable extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('LEARN HTML'),
-          ),
-          drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  DrawerHeader(
-                    child: Text("Drawer Header"),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  new ListTile(
-                    // leading: CircleAvatar(
-                    //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                    // ),
-                    title: Text('Drawer Example'),
-                    onTap: (){
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("LEARN HTML"),
+      ),
 
-                    },
-                  )
-
-                ],
-              )
-          ),
           body: ListView(
             children: <Widget>[
               new Container(
@@ -246,13 +222,14 @@ class Htmltable extends StatelessWidget {
 //                      ),
 //                    ),
                     Padding(
-                      padding: const EdgeInsets.fromLTRB(10.0, 10.0, 0.0, 10.0),
+                      padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "<table style='width:100%'>"
                                   "\n"+
@@ -281,7 +258,7 @@ class Htmltable extends StatelessWidget {
                                   "</table>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"
@@ -328,11 +305,12 @@ class Htmltable extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "table, th, td { \n"
                                   "  border: 1px solid black; \n"
@@ -340,7 +318,7 @@ class Htmltable extends StatelessWidget {
                                   "}"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -389,18 +367,19 @@ class Htmltable extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "table { \n"
                                   "  border-spacing: 5px; \n"
                                   "}"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -420,6 +399,6 @@ class Htmltable extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        );
   }
 }

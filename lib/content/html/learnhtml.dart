@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wotproject/content/homepage.dart';
 import 'package:wotproject/content/html/htmlbasic.dart';
+import 'package:wotproject/second_screen.dart';
 
 
 class Learnhtmlnav extends StatelessWidget {
@@ -27,37 +28,14 @@ class Learnhtml extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-            appBar: AppBar(
-              title: Text('LEARN HTML'),
-            ),
-            drawer: Drawer(
-                child: ListView(
-                  padding: EdgeInsets.zero,
-                  children: <Widget>[
-                    DrawerHeader(
-                      child: Text("Drawer Header"),
-                      decoration: BoxDecoration(
-                        color: Colors.blue,
-                      ),
-                    ),
-                    new ListTile(
-                      // leading: CircleAvatar(
-                      //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                      // ),
-                      title: Text('Drawer Example'),
-                      onTap: (){
+    return new Scaffold(
+        appBar: new AppBar(
+          title: new Text("LEARN HTML"),
+        ),
 
-                      },
-                    )
-
-                  ],
-                )
-            ),
-
-            body: new Container(
+        body: ListView(
+            children: <Widget>[
+              new Container(
                 alignment: Alignment.topRight,
                 child: new Column(
                     mainAxisAlignment: MainAxisAlignment.start,
@@ -102,7 +80,7 @@ class Learnhtml extends StatelessWidget {
                                     Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                    builder: (context) => Homepage()),
+                                    builder: (context) => SecondScreen()),
                                      );
                                     /*...*/
                                   },
@@ -156,25 +134,27 @@ class Learnhtml extends StatelessWidget {
                             ),
                           ]
                       ),
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "HTML is the standard markup language for",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: bold,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
+
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
+                        child: new Align(
+                          alignment: Alignment.centerLeft,
+                          child: new Text(
+                            "HTML is the standard markup language for creating Web pages. \n \n" +
+                                "- HTML stands for Hyper Text Markup Language\n" +
+                                "- HTML describes the structure of a Web page\n" +
+                                "- HTML consists of a series of elements \n"
+                            "- HTML elements tell the browser how to display the content \n"
+                            "- HTML elements are represented by tags \n"
+                            "- HTML tags label pieces of content such as 'heading', 'paragraph', 'table', and so on \n"
+                            "- Browsers do not display the HTML tags, but use them to render the content of the page",
+                            style: new TextStyle(
+                                fontSize: 15.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Ewert"),
+                          ),
+                        ),
                       ),
 
                       new Row(
@@ -184,39 +164,47 @@ class Learnhtml extends StatelessWidget {
                           children: <Widget>[
                             new Padding(
                               child: new Text(
-                                "creating web pages.",
-                                maxLines: 4,
+                                "A Simple HTML Document",
                                 style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "- HTML stands for Hyper Markup Language",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
+                                    fontSize: 25.0,
                                     color: Colors.black,
                                     // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
+                                    fontFamily: "Roboto"),
                               ),
                               padding:
-                              const EdgeInsets.fromLTRB(10.0, 20.0, 0.0, 0.0),
+                              const EdgeInsets.fromLTRB(10.0, 30.0, 10.0, 10.0),
                             ),
                           ]
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
+                        child: Container(
+                          color: Colors.black54,
+                          child: new Align(
+                            alignment: Alignment.centerLeft,
+                            child: Padding(
+                              padding:
+                              const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                              child: new Text(
+                              "<!DOCTYPE html> \n"
+                                "<html> \n"
+                                "<head> \n"
+                                "<title>Page Title</title> \n"
+                                "</head> \n"
+                                "<body> \n \n"
+                                "<h1>My First Heading</h1> \n"
+                                "<p>My first paragraph.</p> \n \n"
+                                "</body>\n"
+                                "</html>",
+                                style: new TextStyle(
+                                    fontSize: 18.0,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: "Ewert"),
+                              ),
+                            ),
+                          ),
+                        ),
                       ),
 
                       new Row(
@@ -226,195 +214,46 @@ class Learnhtml extends StatelessWidget {
                           children: <Widget>[
                             new Padding(
                               child: new Text(
-                                "- HTML describes the structure of a Web page",
-                                maxLines: 4,
+                                "Example Explained",
                                 style: new TextStyle(
-                                    fontSize: 15.0,
+                                    fontSize: 35.0,
                                     color: Colors.black,
                                     // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
+                                    fontFamily: "Roboto"),
                               ),
                               padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
+                              const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
                             ),
                           ]
                       ),
 
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "- HTML consists of a series of elements",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
+                        child: new Align(
+                          alignment: Alignment.centerLeft,
+                          child: new Text(
+                            "- The <!DOCTYPE html> declaration defines this document to be HTML5 \n" +
+                                "- The <html> element is the root element of an HTML page \n" +
+                                "- The <head> element contains meta information about the document\n" +
+                                "- The <title> element specifies a title for the document \n"
+                                    "- The <body> element contains the visible page content \n"
+                                    "- The <h1> element defines a large heading \n"
+                                    "- The <p> element defines a paragraph \n",
+                            style: new TextStyle(
+                                fontSize: 15.0,
+                                color: Colors.black,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Ewert"),
+                          ),
+                        ),
                       ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "- HTML elements tell the browser how to",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "display the content",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "- HTML elements are represented by tags",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "- HTML tags label pieces of content such as",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "'heading', 'paragraph', 'table', and so on",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "- Browsers do not display the HTML tags, but use",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-                      new Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          mainAxisSize: MainAxisSize.max,
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: <Widget>[
-                            new Padding(
-                              child: new Text(
-                                "them to render the content of the page",
-                                maxLines: 4,
-                                style: new TextStyle(
-                                    fontSize: 15.0,
-                                    color: Colors.black,
-                                    // fontWeight: FontWeight.w700,
-                                    fontFamily: "Ewert"),
-                              ),
-                              padding:
-                              const EdgeInsets.fromLTRB(10.0, 0.0, 0.0, 0.0),
-                            ),
-                          ]
-                      ),
-
-
 
 
                     ])
-            ))
+            )
+    ]
+        )
     );
-
   }
 }
 

@@ -28,35 +28,11 @@ class Htmlcolors extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'WOT',
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('LEARN HTML'),
-          ),
-          drawer: Drawer(
-              child: ListView(
-                padding: EdgeInsets.zero,
-                children: <Widget>[
-                  DrawerHeader(
-                    child: Text("Drawer Header"),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                    ),
-                  ),
-                  new ListTile(
-                    // leading: CircleAvatar(
-                    //   backgroundImage: AssetImage("assets/todolistlogo.jpg"),
-                    // ),
-                    title: Text('Drawer Example'),
-                    onTap: (){
+    return new Scaffold(
+      appBar: new AppBar(
+        title: new Text("LEARN HTML"),
+      ),
 
-                    },
-                  )
-
-                ],
-              )
-          ),
           body: ListView(
             children: <Widget>[
               new Container(
@@ -307,17 +283,22 @@ class Htmlcolors extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<h1 style='background-color:DodgerBlue;'>Hello World</h1> \n"
-                                  "<p style='background-color:Tomato;'>Lorem ipsum...</p>"
+                              "<h1 style='background-color:DodgerBlue;'> \n"
+                              "Hello World \n"
+                              "</h1> \n"
+                                  "<p style='background-color:Tomato;'> \n"
+                              "Lorem ipsum... \n"
+                              "</p>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -365,18 +346,25 @@ class Htmlcolors extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<h1 style='color:Tomato;'>Hello World</h1> \n"
-                                  "<p style='color:DodgerBlue;'>Lorem ipsum...</p> \n"
-                                  "<p style='color:MediumSeaGreen;'>Ut wisi enim...</p>"
+                              "<h1 style='color:Tomato;'> \n"
+                              "Hello World \n"
+                              "</h1> \n"
+                                  "<p style='color:DodgerBlue;'> \n"
+                              "Lorem ipsum... \n"
+                              "</p> \n"
+                                  "<p style='color:MediumSeaGreen;'> \n"
+                              "Ut wisi enim... \n"
+                              "</p>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -424,18 +412,25 @@ class Htmlcolors extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
-                              "<h1 style='border:2px solid Tomato;'>Hello World</h1> \n"
-                                  "<h1 style='border:2px solid DodgerBlue;'>Hello World</h1> \n"
-                                  "<h1 style='border:2px solid Violet;'>Hello World</h1>"
+                              "<h1 style='border:2px solid Tomato;'> \n"
+                              "Hello World \n"
+                              "</h1> \n"
+                                  "<h1 style='border:2px solid DodgerBlue;'> \n"
+                              "Hello World \n"
+                              "</h1> \n"
+                                  "<h1 style='border:2px solid Violet;'> \n"
+                              "Hello World \n"
+                              "</h1>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -483,11 +478,12 @@ class Htmlcolors extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 10.0),
                       child: Container(
-                        color: Colors.black,
+                        color: Colors.black54,
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: Padding(
-                            padding: const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
+                            padding:
+                            const EdgeInsets.fromLTRB(5.0, 10.0, 0.0, 10.0),
                             child: new Text(
                               "<h1 style='background-color:rgb(255, 99, 71);'>...</h1> \n"
                                   "<h1 style='background-color:#ff6347;'>...</h1> \n"
@@ -496,7 +492,7 @@ class Htmlcolors extends StatelessWidget {
                                   "<h1 style=''background-color:hsla(9, 100%, 64%, 0.5);'>...</h1>"
                               ,
                               style: new TextStyle(
-                                  fontSize: 13.0,
+                                  fontSize: 18.0,
                                   color: Colors.white,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Ewert"),
@@ -514,6 +510,6 @@ class Htmlcolors extends StatelessWidget {
               ),
             ],
           ),
-        ));
+        );
   }
 }
