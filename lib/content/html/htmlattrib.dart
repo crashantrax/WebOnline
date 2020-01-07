@@ -74,11 +74,7 @@ class Htmlattrib extends StatelessWidget {
                                 disabledTextColor: Colors.black,
                                 splashColor: Colors.grey,
                                 onPressed: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Htmlbasic()),
-                                  );
+                                  Navigator.of(context).pop();
                                   /*...*/
                                 },
                                 child: Text(
@@ -151,13 +147,13 @@ class Htmlattrib extends StatelessWidget {
                       child: new Align(
                         alignment: Alignment.centerLeft,
                         child: new Text(
-                          " - All HTML elements can have attributes."
+                          " ➼ All HTML elements can have attributes."
                           "\n" +
-                              " - Attributes provide additional information about an element."
+                              " ➼ Attributes provide additional information about an element."
                                   "\n" +
-                              " - Attributes are always specified in the start tag."
+                              " ➼ Attributes are always specified in the start tag."
                                   "\n" +
-                              " - Attributes usually come in name/value pairs like: name='value'.",
+                              " ➼ Attributes usually come in name/value pairs like: name='value'.",
                           style: new TextStyle(
                               fontSize: 15.0,
                               color: Colors.black,

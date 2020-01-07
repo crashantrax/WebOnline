@@ -136,13 +136,13 @@ class Learnhtml extends StatelessWidget {
                           alignment: Alignment.centerLeft,
                           child: new Text(
                             "HTML is the standard markup language for creating Web pages. \n \n" +
-                                "- HTML stands for Hyper Text Markup Language\n" +
-                                "- HTML describes the structure of a Web page\n" +
-                                "- HTML consists of a series of elements \n"
-                            "- HTML elements tell the browser how to display the content \n"
-                            "- HTML elements are represented by tags \n"
-                            "- HTML tags label pieces of content such as 'heading', 'paragraph', 'table', and so on \n"
-                            "- Browsers do not display the HTML tags, but use them to render the content of the page",
+                                "➼ HTML stands for Hyper Text Markup Language\n" +
+                                "➼ HTML describes the structure of a Web page\n" +
+                                "➼ HTML consists of a series of elements \n"
+                            "➼ HTML elements tell the browser how to display the content \n"
+                            "➼ HTML elements are represented by tags \n"
+                            "➼ HTML tags label pieces of content such as 'heading', 'paragraph', 'table', and so on \n"
+                            "➼ Browsers do not display the HTML tags, but use them to render the content of the page",
                             style: new TextStyle(
                                 fontSize: 15.0,
                                 color: Colors.black,
@@ -227,13 +227,13 @@ class Learnhtml extends StatelessWidget {
                         child: new Align(
                           alignment: Alignment.centerLeft,
                           child: new Text(
-                            "- The <!DOCTYPE html> declaration defines this document to be HTML5 \n" +
-                                "- The <html> element is the root element of an HTML page \n" +
-                                "- The <head> element contains meta information about the document\n" +
-                                "- The <title> element specifies a title for the document \n"
-                                    "- The <body> element contains the visible page content \n"
-                                    "- The <h1> element defines a large heading \n"
-                                    "- The <p> element defines a paragraph \n",
+                            "➼ The <!DOCTYPE html> declaration defines this document to be HTML5 \n" +
+                                "➼ The <html> element is the root element of an HTML page \n" +
+                                "➼ The <head> element contains meta information about the document\n" +
+                                "➼ The <title> element specifies a title for the document \n"
+                                    "➼ The <body> element contains the visible page content \n"
+                                    "➼ The <h1> element defines a large heading \n"
+                                    "➼ The <p> element defines a paragraph \n",
                             style: new TextStyle(
                                 fontSize: 15.0,
                                 color: Colors.black,
